@@ -11,8 +11,9 @@
 9.) city <br />
 10.) zip <br />
 11.) phone_no <br />
-12.) currency (must be 3 digit currency code Ex. USD, EUR) <br />
-13.) amount <br />
+12.) email <br />
+13.) currency (must be 3 digit currency code Ex. USD, EUR) <br />
+14.) amount <br />
 
 ### hosted page code.
 ```html
