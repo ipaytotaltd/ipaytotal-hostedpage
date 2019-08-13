@@ -8,7 +8,7 @@
         <div class="container">
             <br><br>
             <h1>Hosted Page</h1>
-            <form action="http://localhost:8000/hosted-pay/payment-request" method="POST">
+            <form action="https://ipaytotal.solutions/hosted-pay/payment-request" method="POST">
                 <input type="hidden" name="api_key" value="api_key">
                 <input type="hidden" name="redirect_url_success" value="">
                 <input type="hidden" name="redirect_url_fail" value="">
@@ -104,6 +104,7 @@
             $("#email").val("test@test.com");
             $("#phone_no").val("1234567896");
             $("#amount").val("7");
+            $("#currency").val("USD");
             })
             });
         </script>
