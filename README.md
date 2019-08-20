@@ -1,4 +1,7 @@
 # iPayTotal Hosted Page 
+<p>We provide payment hosted page for easy payment solution. hosted page integration you can done with your website following two way.</p>
+#### Step - 1 Using of simple form integration.
+<p>in this way you should use following form code in your website and put <code>https://ipaytotal.solutions/hosted-pay/payment-request</code> this url in your html form's action with post method. after submit the form user will be redirect on our CC page form and fill all the CC details and make payment. then our server will be redirect to you on your redirect URl which you already pass in form hidden value(success/fail) URL.</p>
 ### following parameters required in hosted page.
 1.) api_key <br />
 2.) redirect_url_success <br />
@@ -14,6 +17,8 @@
 12.) email <br />
 13.) currency (must be 3 digit currency code Ex. USD, EUR) <br />
 14.) amount <br />
+15.) ip_address <br />
+16.) sulte_apt_no (optional) - this value will be return in your redirect url as a query string.<br />
 
 ### hosted page code.
 ```html
@@ -21,6 +26,7 @@
     <input type="hidden" name="api_key" value="api_key">
     <input type="hidden" name="redirect_url_success" value="">
     <input type="hidden" name="redirect_url_fail" value="">
+    <input type="hidden" name="ip_address" value="192.168.0.3">
     <label for="first_name">First Name</label>
     <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter First Name">
     <label for="last_name">Last Name</label>
