@@ -1,6 +1,29 @@
 # iPayTotal Hosted Page 
-<p>We provide payment hosted page for easy payment solution. hosted page integration you can done with your website following two way.</p>
-#### Step - 1 Using of simple form integration.
+<p>This is iPaytotal Hosted Page API documentation. In this API, users details will be sent to iPaytotal server with curl request, whereas Credit card details page will be loaded over iPaytotal server. Follow bellow steps to integrate hosted page API with iPaytotal.</p>
+## Step - 1 Using curl request.
+<strong>1.) Send Curl request</strong>
+<p>Curl request send with bellow parameters. Some parameters are optional but we recommend to send with request. All personal details should be of credit card holders. User here used for credit card holder.</p>
+| Parameters           | Data Type | Required | Description                                                                          |
+|----------------------|-----------|----------|--------------------------------------------------------------------------------------|
+| api_key              | string    | Y        | API key from iPaytotal account                                                       |
+| first_name           | string    | Y        | First Name of user                                                                   |
+| last_name            | string    | Y        | Last Name of user                                                                    |
+| address              | string    | Y        | Address of user                                                                      |
+| country              | string    | Y        | 2 letter Country, eg US                                                              |
+| state                | string    | Y        | State Name, 2 letter for US states, eg CA                                            |
+| city                 | string    | Y        | City Name                                                                            |
+| zip                  | string    | Y        | Zip Code                                                                             |
+| ip_address           | string    | Y        | IP address of user device, eg 94.104.7.296                                           |
+| email                | string    | Y        | Valid email id                                                                       |
+| phone_no             | string    | Y        | Phone No.                                                                            |
+| amount               | decimal   | Y        | Amount value eg. 10, 10.00                                                           |
+| currency             | string    | Y        | 3 Digit format, eg USD                                                               |
+| redirect_url_success | string    | Y        | Merchant site URL where we redirect from 3DS complete if transaction will be success |
+| redirect_url_fail    | string    | Y        | Merchant site URL where we redirect from 3DS complete if transaction will be decline |
+| sulte_apt_no         | string    | N        | Order number of Merchant Transaction                                                 |
+|                      |           |          |                                                                                      |
+
+## Step - 2 Using of simple form integration.
 <p>in this way you should use following form code in your website and put <code>https://ipaytotal.solutions/hosted-pay/payment-request</code> this url in your html form's action with post method. after submit the form user will be redirect on our CC page form and fill all the CC details and make payment. then our server will be redirect to you on your redirect URl which you already pass in form hidden value(success/fail) URL.</p>
 ### following parameters required in hosted page.
 1.) api_key <br />
