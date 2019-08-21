@@ -1,7 +1,7 @@
 # iPayTotal Hosted Page 
 <p>This is iPaytotal Hosted Page API documentation. In this API, users details will be sent to iPaytotal server with curl request, whereas Credit card details page will be loaded over iPaytotal server. Follow bellow steps to integrate hosted page API with iPaytotal.</p>
 ## Step - 1 Using curl request.
-<br />
+
 ### following parameters required in hosted page.
 1.) api_key <br />
 2.) redirect_url_success <br />
