@@ -8,12 +8,7 @@
         <div class="container">
             <br><br>
             <h1>Hosted Page</h1>
-            <form action="https://ipaytotal.solutions/hosted-pay/payment-request" method="POST">
-                <input type="hidden" name="api_key" value="api_key">
-                <input type="hidden" name="redirect_url_success" value="">
-                <input type="hidden" name="redirect_url_fail" value="">
-                <input type="hidden" name="sulte_apt_no" value="">
-                <input type="hidden" name="ip_address" value="">
+            <form action="submit.php" method="POST">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -30,7 +25,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="address">Address</label>
-                            <textarea class="form-control" id="address" name="address" placeholder="Enter Address"></textarea>
+                            <textarea class="form-control" id="address" name="address" placeholder="Enter Address" rows="1"></textarea>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -83,30 +78,11 @@
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-                <!-- <a href="#" class="btn btn-primary fillup_form">Fillup</a> -->
             </form>
             <br><br><br>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function(){
-            $(".fillup_form").click(function(){
-            $("#first_name").val("test");
-            $("#last_name").val("test");
-            $("#address").val("test");
-            $("#country").val("US");
-            $("#state").val("TX");
-            $("#city").val("TX");
-            $("#zip").val("360002");
-            $("#birth_date").val("13-8-2019");
-            $("#email").val("test@test.com");
-            $("#phone_no").val("1234567896");
-            $("#amount").val("7");
-            $("#currency").val("USD");
-            })
-            });
-        </script>
     </body>
 </html>
