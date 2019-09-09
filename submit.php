@@ -1,6 +1,6 @@
 <?php
 $url = "https://ipaytotal.solutions/api/hosted-pay/payment-request";
-$key = "7aE3OKIZxusugQdpk3gwNi9x63MRAFLgkMJ4nyil88ZYMyjqTSE3FIo8L5KJghfi";
+$key = "7aE3OKIZxusgQdpk3gwNix63MRAFLgkMJnyil88ZYMyqTSEFIo8L5KJhfi";
 // Fill with real card holders info
 // all these parameters are required
 $data = [
