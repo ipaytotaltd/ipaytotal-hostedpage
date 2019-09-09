@@ -35,7 +35,6 @@
         “status”:"3d_redirect”,
         “payment_redirect_url”: "https://ipaytotal.solutions/hosted-pay?hash=gVRC9OjvYehEbiTAS7RXoxC7L1566046455”,
         “valid_till”:"2019-08-08 02:51:02”
-
     }
     
 <p>If the request data is in valid format, then above response will be sent. You will be need to redirect to “payment_redirect_url” for payment page before “valid_till”.</p>
