@@ -18,8 +18,7 @@ $data = [
     'amount' => $_POST['amount'],
     'currency' => $_POST['currency'],
     'sulte_apt_no' => 'ORDER'.time(), // transaction ref from merhant side
-    'redirect_url_success' => 'http://localhost:8000/response.php', // redirect to here if transaction success
-    'redirect_url_fail' => 'http://localhost:8000/response.php', // redirect to here if transaction decline
+    'response_url' => 'http://localhost:8000/response.php', // redirect to here if transaction success or fail
 ];
 
 // create curl request
