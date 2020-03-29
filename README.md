@@ -71,38 +71,3 @@
  <p>https://ipaytotal.solutions/fail?status=fail&message=Activity%20limit%20exceeded.&order_id=20190000458521&sulte_apt_no=456789521365</p>
 
  <p><b>For more details see <code>iPaytotal Hosted API.docx</code> file in the root of the project.</b></p>
-    
-## Method - 2 Using of simple form integration.
-<p>If your website is unable to make curl request, there is also another way to integrate iPaytotal payment. In this way you should use following form code in your website and put <code>https://ipaytotal.solutions/hosted-pay/payment-request</code> this url in your html form's action with post method. after submit the form user will be redirect on our CC page form and fill all the CC details and make payment. then our server will be redirect to you on your redirect URl which you already pass in form hidden value(success/fail) URL.</p>
-
-
-### hosted page code.
-```html
-<form action="https://ipaytotal.solutions/hosted-pay/payment-request" method="POST">
-    <input type="hidden" name="api_key" value="api_key">
-    <input type="hidden" name="response_url" value="">
-    <input type="hidden" name="ip_address" value="192.168.0.3">
-    <label for="first_name">First Name</label>
-    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter First Name">
-    <label for="last_name">Last Name</label>
-    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter Last Name">
-    <label for="address">Address</label>
-    <textarea class="form-control" id="address" name="address" placeholder="Enter Address"></textarea>
-    <label for="country">Country</label>
-    <input type="text" class="form-control" id="country" name="country" placeholder="Enter Country">
-    <label for="state">State</label>
-    <input type="text" class="form-control" id="state" name="state" placeholder="Enter State">
-    <label for="city">City</label>
-    <input type="text" class="form-control" id="city" name="city" placeholder="Enter City">
-    <label for="zip">Zip</label>
-    <input type="text" class="form-control" id="zip" name="zip" placeholder="Enter Zip">
-    <label for="email">Email</label>
-    <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email">
-    <label for="phone_no">Phone No</label>
-    <input type="text" class="form-control" id="phone_no" name="phone_no" placeholder="Enter Phone No">
-    <label for="currency">Currency</label>
-    <input type="text" class="form-control" id="currency" name="currency" placeholder="ex. USD">
-    <label for="amount">Amount</label>
-    <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter Amount">
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
