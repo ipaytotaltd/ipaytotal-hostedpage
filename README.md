@@ -18,6 +18,7 @@
 14.) amount <br />
 15.) ip_address <br />
 16.) sulte_apt_no (optional) - this value will be return in your redirect url as a query string.<br />
+17.) webhook_url (optional) - post url of merchant website where webhook notification will be send.<br />
 
 <strong>1.) Send Curl request</strong>
 <p>Curl request send with bellow parameters. Some parameters are optional but we recommend to send with request. All personal details should be of credit card holders. User here used for credit card holder.</p>
@@ -62,7 +63,7 @@
  
  <p>After Credit card form fill up, user need to press Pay button. This request will take some time, if user card has 3D secure feature enabled, it will also redirect to 3D secure page, where user will asked to input PIN or OTP if asked. After all process complete, user will be redirect to merchant website according to transaction status.</p>
  
- <p>If transaction will be success, user will redirect to ”response_url” with response in query string as bellow:</p>
+ <p>If transaction will be success, user will redirect to ”response_url” with response in query string as below:</p>
     
  <p>https://ipaytotal.solutions/success?status=success&message=Your%20transaction%20was%20success&order_id=20190000458521&sulte_apt_no=456789521365</p>
  
@@ -71,3 +72,29 @@
  <p>https://ipaytotal.solutions/fail?status=fail&message=Activity%20limit%20exceeded.&order_id=20190000458521&sulte_apt_no=456789521365</p>
 
  <p><b>For more details see <code>iPaytotal Hosted API.docx</code> file in the root of the project.</b></p>
+
+### 4 Webhook
+ 
+ <p>If "webhook_url" parameter is send with the request payload, then we will send transaction webhook to the merchant server at "webhook_url". The request will be send in json format.</p>
+ 
+ <p>Below is the webhook request example:</p>
+    
+    {
+        "order_id": "202095632606577891",
+        "sulte_apt_no": "TS4565",
+        "transaction_status": "success",
+        "reason": "Transaction success",
+        "currency": "USD",
+        "amount": "12",
+        "test": true,
+        "transaction_date": "2020-06-03 12:01:45"
+    }
+ 
+ <p><b>Request explanation:</b></p>
+
+ order_id:  IPaytotal transaction order ID.
+ sulte_apt_no:  Merchant transaction order ID.
+ transaction_status:    Transaction status - "success"/"fail"
+ reason:    Response from the bank about transaction.
+ test:  Transaction environment in test mode. - true/false
+ 
