@@ -92,9 +92,9 @@
  
  <p><b>Request explanation:</b></p>
 
- order_id:  IPaytotal transaction order ID.
- sulte_apt_no:  Merchant transaction order ID.
- transaction_status:    Transaction status - "success"/"fail"
- reason:    Response from the bank about transaction.
- test:  Transaction environment in test mode. - true/false
+ <p><b>order_id:</b>  IPaytotal transaction order ID.</p>
+ <p><b>sulte_apt_no:</b>  Merchant transaction order ID.</p>
+ <p><b>transaction_status:</b>    Transaction status - "success"/"fail"</p>
+ <p><b>reason:</b>    Response from the bank about transaction.</p>
+ <p><b>test:</b>  Transaction environment in test mode. - true/false</p>
  
