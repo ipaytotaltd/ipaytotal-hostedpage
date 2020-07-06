@@ -1,32 +1,106 @@
 # iPayTotal Hosted Page 
 <p>This is iPaytotal Hosted Page API documentation. In this API, users details will be sent to iPaytotal server with curl request, whereas Credit card details page will be loaded over iPaytotal server. Follow bellow steps to integrate hosted page API with iPaytotal.</p>
-## Step - 1 Using curl request.
 
-### The following parameters are required in hosted page.
-1.) api_key <br />
-2.) response_url <br />
-4.) first_name <br />
-5.) last_name <br />
-6.) address <br />
-7.) country (must be 2 digit country code Ex.US) <br />
-8.) state <br />
-9.) city <br />
-10.) zip <br />
-11.) phone_no <br />
-12.) email <br />
-13.) currency (must be 3 digit currency code Ex. USD, EUR) <br />
-14.) amount <br />
-15.) ip_address <br />
-16.) sulte_apt_no (optional) - this value will be return in your redirect url as a query string.<br />
-17.) webhook_url (optional) - post url of merchant website where webhook notification will be sent.<br />
+## Using curl request.
 
-<strong>1.) Send Curl request</strong>
-<p>Send a Curl request with the parameters below. Some parameters are optional but we encourage you to send them along with the request. All fields in the request must be provided based on the information indicated in the cardholder's credit card/billing information.</p>
+### The following parameters should be sent to the hosted page.
+
+<em>
+<table>
+
+<tr>
+    <td>1.</td>
+    <td>api_key</td>
+    <td></td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>response_url </td>
+    <td></td>
+</tr>
+<tr>
+    <td>3.</td>
+    <td>first_name </td>
+    <td></td>
+</tr>
+<tr>
+    <td>4.</td>
+    <td>last_name </td>
+    <td></td>
+</tr>
+<tr>
+    <td>5.</td>
+    <td>address </td>
+    <td></td>
+</tr>
+<tr>
+    <td>6.</td>
+    <td>country</td>
+    <td>(must be 2 digit country code Ex.US)</td>
+</tr>
+<tr>
+    <td>7.</td>
+    <td>state</td>
+    <td></td>
+</tr>
+<tr>
+    <td>8.</td>
+    <td>city</td>
+    <td></td>
+</tr>
+<tr>
+    <td>9.</td>
+    <td>zip</td>
+    <td></td>
+</tr>
+<tr>
+    <td>10.</td>
+    <td>phone_no </td>
+    <td></td>
+</tr>
+<tr>
+    <td>11.</td>
+    <td>email </td>
+    <td></td>
+</tr>
+<tr>
+    <td>12.</td>
+    <td>currency</td>
+    <td>(must be 3 digit currency code Ex. USD, EUR)</td>
+</tr>
+<tr>
+    <td>13.</td>
+    <td>amount </td>
+    <td></td>
+</tr>
+<tr>
+    <td>14.</td>
+    <td>ip_address </td>
+    <td></td>
+</tr>
+<tr>
+    <td>15.</td>
+    <td>sulte_apt_no</td>
+    <td>(optional) This value will be return in your redirect url as a query string.</td>
+</tr>
+<tr>
+    <td>16.</td>
+    <td>webhook_url</td>
+    <td>(optional) post url of merchant website where webhook notification will be sent.</td>
+</tr>
+
+</table>
+</em>
+
+#### Send Curl request
+
+<p>Send a Curl request with all the parameters provided to the URL below. We encourage all users to please provide all the necessary fields.  All credit card fields in the request parameters must be provided and must be the same information indicated in the cardholder's credit card/billing information.</p>
                                               
 <p>Request URL: https://ipaytotal.solutions/api/hosted-pay/payment-request</p>
 <p>Request type: POST</p>
     
-### Response:
+#### Response
+
 <p>After a successful request, the response will be returned in JSON format.</p>
 <p>Successs JSON Response type example :</p>
 
@@ -59,7 +133,7 @@
  
  <p>After you redirect to url payment_redirect_url, bellow form will be loaded over iPaytotal payment page. You will need to fill credit card details</p>
  
- ### 3 Response from iPaytotal
+#### Response from iPaytotal
  
  <p>After Credit card form is completely filled up, the user must press the Pay button. This request will take some time, if user card has 3D secure feature enabled, it will also redirect the process to a 3D secure page, where user will be asked to input PIN or OTP if asked. After the entire process is complete, user will be redirected to the merchant website and will reflect the transaction status.</p>
  
@@ -73,7 +147,7 @@
 
  <p><b>For more details see <code>iPaytotal Hosted API.docx</code> file in the root of the project.</b></p>
 
-### 4 Webhook
+#### Webhook
  
  <p>If "webhook_url" parameter is sent with the request payload, then the process will send a transaction webhook to the merchant server at "webhook_url". The request will be sent in JSON format.</p>
  
