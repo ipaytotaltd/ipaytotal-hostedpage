@@ -35,7 +35,7 @@ curl_close($curl);
 
 $responseData = json_decode($response);
 
-if ($responseData->payment_redirect_url != null) {
+if (isset($responseData->payment_redirect_url) && $responseData->payment_redirect_url != null) {
     // redirect to card payment page
     header('Location: '.$responseData->payment_redirect_url);
 } else {
