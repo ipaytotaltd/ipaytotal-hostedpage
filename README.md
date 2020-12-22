@@ -106,8 +106,8 @@
 
     {
         "status": "success",
-        "payment_redirect_url": "http://localhost:8000/transaction/flutterwave-checkout/form/JINS1585461334",
-        "api_key": "api_key",
+        "payment_redirect_url": "https://ipaytotal.solutions/hosted-pay?hash=gVRC9OjvYehEbiTAS7RXoxC7L15660",
+        "api_key": "fskjcncbjsdhbjcjhbxxjjvYehEbiTAS7RXoxC7L15660",
         "sulte_apt_no": null,
         "valid_till": "2020-03-29 07:55:34"
     }
@@ -128,10 +128,25 @@
             ]
         },
         "sulte_apt_no": null,
-        "api_key": "api_key"
+        "api_key": "fskjcncbjsdhbjcjhbxxjjvYehEbiTAS7RXoxC7L15660"
     }
  
- <p>After you redirect to url payment_redirect_url, bellow form will be loaded over iPaytotal payment page. You will need to fill credit card details</p>
+ <p>After you redirect to url payment_redirect_url, a form will be loaded over iPaytotal payment page. You will need to fill credit card details if asked</p>
+ 
+  <p>If making request in testing URL, then it will ask for Credit card details. Use this bellow testing card data</p>
+
+Testing Card data
+
+card_no: 4242 4242 4242 4242
+Expiry Month: 02
+Expiry Year: 2021
+CVV Number: 123
+
+card_no: 4000 0000 0000 0077
+Expiry Month: 02
+Expiry Year: 2021
+CVV Number: 123
+
  
 #### Response from iPaytotal
  
