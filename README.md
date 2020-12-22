@@ -56,7 +56,7 @@
 <tr>
     <td>10.</td>
     <td>phone_no </td>
-    <td></td>
+    <td>must be add country code with mobile no. (Ex : +449745195841)</td>
 </tr>
 <tr>
     <td>11.</td>
