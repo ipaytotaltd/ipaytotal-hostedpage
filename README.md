@@ -9,82 +9,91 @@
 <table>
 
 <tr>
-    <td>1.</td>
+    <td>1</td>
     <td>api_key</td>
     <td></td>
 </tr>
 <tr>
-    <td>2</td>
+    <td>2.</td>
+    <td>method</td>
+    <td>(optional) pass here your payment method.<br />
+    possible value is = (unipay, visa-mc, crypto)<br />
+    unipay (for unionpay card),<br />
+    visa-mc (for visa, master, amex, jcb, discover),<br />
+    crypto (for crypto currency)</td>
+</tr>
+<tr>
+    <td>3.</td>
     <td>response_url </td>
     <td></td>
 </tr>
 <tr>
-    <td>3.</td>
+    <td>4.</td>
     <td>first_name </td>
     <td></td>
 </tr>
 <tr>
-    <td>4.</td>
+    <td>5.</td>
     <td>last_name </td>
     <td></td>
 </tr>
 <tr>
-    <td>5.</td>
+    <td>6.</td>
     <td>address </td>
     <td></td>
 </tr>
 <tr>
-    <td>6.</td>
+    <td>7.</td>
     <td>country</td>
     <td>(must be 2 digit country code Ex.US)</td>
 </tr>
 <tr>
-    <td>7.</td>
+    <td>8.</td>
     <td>state</td>
     <td></td>
 </tr>
 <tr>
-    <td>8.</td>
+    <td>9.</td>
     <td>city</td>
     <td></td>
 </tr>
 <tr>
-    <td>9.</td>
+    <td>10.</td>
     <td>zip</td>
     <td></td>
 </tr>
 <tr>
-    <td>10.</td>
+    <td>11.</td>
     <td>phone_no </td>
     <td></td>
 </tr>
 <tr>
-    <td>11.</td>
+    <td>12.</td>
     <td>email </td>
     <td></td>
 </tr>
 <tr>
-    <td>12.</td>
+    <td>13.</td>
     <td>currency</td>
     <td>(must be 3 digit currency code Ex. USD, EUR)</td>
 </tr>
 <tr>
-    <td>13.</td>
+    <td>14.</td>
     <td>amount </td>
     <td></td>
 </tr>
 <tr>
-    <td>14.</td>
+    <td>15.</td>
     <td>ip_address </td>
     <td></td>
 </tr>
 <tr>
-    <td>15.</td>
+    <td>16.</td>
     <td>sulte_apt_no</td>
     <td>(optional) This value will be return in your redirect url as a query string.</td>
 </tr>
 <tr>
-    <td>16.</td>
+    <td>17.</td>
     <td>webhook_url</td>
     <td>(optional) post url of merchant website where webhook notification will be sent.</td>
 </tr>
