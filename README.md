@@ -16,7 +16,7 @@
 <tr>
     <td>2.</td>
     <td>method</td>
-    <td>pass here your payment method.<br />
+    <td>(optional) pass here your payment method.<br />
     possible value is = (unipay, visa-mc, crypto)<br />
     unipay (for unionpay card),<br />
     visa-mc (for visa, master, amex, jcb, discover),<br />
