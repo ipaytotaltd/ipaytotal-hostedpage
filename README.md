@@ -16,11 +16,11 @@
 <tr>
     <td>2.</td>
     <td>method</td>
-    <td>(optional) pass here your payment method.<br />
-    possible value is = (unipay, visa-mc, crypto)<br />
-    unipay (for unionpay card),<br />
-    visa-mc (for visa, master, amex, jcb, discover),<br />
-    crypto (for crypto currency)</td>
+    <td>(optional) Need to specify the Payment Method,<br />
+The following can be the possible values:<br />
+- unipay (specific for Unionpay Card)<br />
+- visa-mc (specific for Visa, Master, AMEX, Discover Cards)<br />
+- crypto (specific for Cryptocurrencies)</td>
 </tr>
 <tr>
     <td>3.</td>
