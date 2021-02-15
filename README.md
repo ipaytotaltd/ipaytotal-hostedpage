@@ -14,7 +14,16 @@
     <td></td>
 </tr>
 <tr>
-    <td>2</td>
+    <td>2.</td>
+    <td>method</td>
+    <td>pass here your payment method.<br />
+    possible value is = (unipay, visa-mc, crypto)<br />
+    unipay (for unionpay card),<br />
+    visa-mc (for visa, master, amex, jcb, discover),<br />
+    crypto (for crypto currency)</td>
+</tr>
+<tr>
+    <td>3.</td>
     <td>response_url </td>
     <td></td>
 </tr>
